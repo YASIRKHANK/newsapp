@@ -1,0 +1,21 @@
+import React, { Component } from 'react'
+import Navbar from"./component/Navbar"
+import News from './component/News'
+// import Spiner from './Spiner'
+
+
+
+export class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navbar/>
+        <News pageSize={5}/> 
+    
+    
+      </div>
+    )
+  }
+}
+
+export default App
