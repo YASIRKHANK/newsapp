@@ -1,12 +1,13 @@
-import React, { PureComponent } from 'react'
-// import loading from "./loading.gif"
+import Spinner from 'react-bootstrap/Spinner';
 
-export default class Spiner extends PureComponent {
-  render() {
-    return (
-        <div className="spinner-border, text-center" role="status">
-        <span className="sr-only">Loading...</span>
-      </div>
-    )
-  }
+function BasicExample() {
+  return (
+    <div className='text-center'>
+    <Spinner animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>
+    </div>
+  );
 }
+
+export default BasicExample;
